@@ -12,3 +12,6 @@ _____
 - lxml
 - gcc
 - matplotlib 
+- numpy
+- selenium
+- [EdgeDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
