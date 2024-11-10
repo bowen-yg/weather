@@ -8,7 +8,7 @@ def get_time_list()->list:  #获取时间列表
     return time_list
 
 def get_tem_list()->list:   #获取温度列表
-    tem_list=re.findall(r'<td>(\d{1,2}\.?\d?)℃</td>',html)
+    tem_list=re.findall(r'<td>(-?\d{1,2}\.?\d?)℃</td>',html)
     return tem_list[:8]
 
 def get_humidity_list()->list:   #获取湿度列表
