@@ -4,6 +4,11 @@ import get_date_m as gm
 #设置字体
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
+plt.figure(figsize=(10, 8))
+# 设置标题
+plt.suptitle('2023年10月-2024年9月最高温度和最低温度折线图')
+# 绘制折线图
+
 #利用for循环快速显示12个月的数据
 for a in range(10,13):
     #表格合成
@@ -37,7 +42,7 @@ for i in range(1,10):
     plt.title(str(2024)+'-'+str(i))
     plt.plot(x, h_tem, 'r')
     plt.plot(x, l_tem, 'b')
-    #显示网格
     plt.grid()
-#输出
+# 调整子图之间的间距
+plt.tight_layout()
 plt.show()
