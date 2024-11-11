@@ -33,7 +33,7 @@ for i,txt in enumerate(y):
 plt.grid(True)
 
 #绘制拟合曲线
-fit=np.polyfit(x,y,deg=6)
+fit=np.polyfit(x,y,deg=6.5)
 
 x_new=np.linspace(min(x),max(x),100)
 y_new=np.polyval(fit,x_new)
