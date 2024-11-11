@@ -36,8 +36,8 @@ def get_low_tem(data)->list:    #获取最低温度列表
     return low_tem
 
 if __name__ == '__main__':
-    data=202406
+    data = 202311
     print(get_date_m(data))
     print(get_tem_list(data))
     print(get_high_tem(data))
-    print(len(get_low_tem(data)))
+    print(get_low_tem(data))
