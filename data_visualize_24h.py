@@ -12,7 +12,7 @@ plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 #设置刻度
 x=np.arange(0,40,5)
 plt.xticks(x,dg24.get_time_list())
-plt.yticks(np.arange(-10,10,1))
+plt.yticks(np.arange(-20,30,1))
 
 #坐标轴标注
 plt.xlabel('时间')

@@ -8,7 +8,7 @@ headers = {
 url_7d='https://tianqi.2345.com/seventh-54161.htm'
 #爬取七天天气
 def seven_day_weather(url):
-    url_page=requests.get(url=url,headers=headers)
+    url_page=requests.get(url=url,headers=headers,timeout=10)
     return url_page
 
 url_page=seven_day_weather(url_7d)
