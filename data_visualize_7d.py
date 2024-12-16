@@ -22,7 +22,7 @@ plt.rcParams['axes.unicode_minus'] = False
 date_list = dg.get_date_list()
 date_list2=dg.get_weather_list()
 plt.xticks([0,5,10,15,20,25,30,35], date_list)
-plt.yticks(np.arange(-10,15,1))
+plt.yticks(np.arange(-20,25,1))
 
 # 设置图表标题和轴标签
 plt.xlabel('日期')
